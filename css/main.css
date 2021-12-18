@@ -1,0 +1,231 @@
+body{
+    background-color:black;
+}
+
+.index{
+    position: relative;
+    height: 150px;
+    width: 350px;
+    cursor: pointer;
+    color: #409cfc;
+    font-size: 30px;
+}
+
+.billboard{
+    top:60px;
+    position: relative;
+   
+}
+
+#connect{
+    color: #409cfc;
+    font-size: 90px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 700px) {
+    #connect{
+        font-size: 40px;
+    }
+    .popup{
+        top: auto;
+    }
+}
+
+
+#note{
+    color:rgb(59, 67, 99);
+    font-size: 25px;
+    padding-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.index img{
+    float: left;
+    position: relative;
+    top:10px;
+    left: 0px;
+    height: 90px;
+    width: 110px;
+   
+}
+
+#imgclick{
+    padding-top: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.toclick{
+    border: 3px solid #409cfc;
+    border-radius: 5px;
+    height: 50px;
+    width: 170px;
+    color: #409cfc;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 8px;
+    margin: 30px;
+}
+
+.toclick:hover{
+    background-color: wheat;
+}
+
+.popup{
+    background-color: white;
+    position: absolute;
+    top:50px;
+    width: 80%;
+    height:480px;
+    display: ;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#indcator{
+    color: rgb(59, 67, 99);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    position: relative;
+    width: auto;
+    border-bottom: 5px solid #409cfc;
+}
+
+.close{
+  
+    right: 10px;
+   
+    top: 15px;
+    position: absolute;
+    width: auto;
+    float: right;
+}
+
+.wallet{
+    border:1px solid #409cfc;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 15px;
+    margin-left: 30px;
+    text-align: center;
+    padding-top: 10px;
+    box-shadow:0 0 10px rgb(141, 140, 140);
+    font-weight: bold;
+}
+
+.wallet:hover{
+    box-shadow:0 0 10px rgb(100, 107, 212);
+}
+.wallet img{
+    box-sizing: content-box;
+    size: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.bodym{
+    position: relative;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 500px;
+    width: 450px;
+    background-color:;
+}
+
+.nav{
+    position: absolute;
+    width:100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    background-color:;
+    border-bottom-color: rgb(92, 91, 91);
+}
+
+#navi{
+    height: 100%;
+    width: 33.3%;
+    text-align: center;
+    padding-top: 13px;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    cursor: pointer;
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 1px solid rgb(184, 175, 175);
+}
+
+.nav #navi.active{
+    border: 1px solid rgb(184, 175, 175);
+    color: rgb(105, 150, 219);
+    border-bottom: white;
+}
+
+
+
+#navi:hover{
+    border: 1px solid rgb(184, 175, 175);
+    color: rgb(105, 150, 219);
+    border-bottom: white;
+}
+
+.tabcenter{
+    position: relative;
+    top:100px;
+    
+}
+
+.tab_container{
+    display: none;
+}
+
+.style{
+    width: 100%;
+    height: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .bodym{
+      width: 300px;
+    }
+    #navi{
+        font-size: 15px;
+    }
+    .popup{
+        position:absolute;
+        top:400px;
+    }
+  }
+
+.wallet{
+    cursor: pointer;
+}
+
+.mainlo img{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 100px;
+}
+
+@media screen and (max-width: 300px) {
+    #connect{
+        font-size: 30px;
+    }
+   
+}
